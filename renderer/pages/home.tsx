@@ -53,7 +53,7 @@ const Home: React.FC = () => {
     <>
       <Header />
       <main
-        className={`flex min-h-screen justify-evenly md:flex-row items-center justify-center gap-4 px-5 md:px-10 bg-primary dark:bg-background ${inter.className}`}
+        className={`flex min-h-screen md:flex-row items-center justify-center gap-4 px-5 md:px-10 bg-primary dark:bg-background ${inter.className}`}
       >
         <div className="w-full md:w-[500px] h-full flex-initial flex-col items-center px-5 gap-2">
           <h1 className="text-2xl font-semibold text-primary dark:text-foreground my-1">
@@ -63,7 +63,7 @@ const Home: React.FC = () => {
             Anexe aqui sua planilha para iniciar
           </p>
           <form onSubmit={handleSubmit}>
-            <div className="w-full my-1 p-2 flex flex-col items-start rounded-md container-bg dark:bg-gray-800 my-1">
+            <div className="w-full p-2 flex flex-col items-start rounded-md container-bg my-1">
               <FileUpload onFileSelect={handleFileSelect} />
             </div>
             <div className="w-full flex flex-row items-center justify-center">
