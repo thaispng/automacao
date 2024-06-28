@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 250, 250, 250;
+  --primary-rgb: 250, 250, 250; /* Primary color for light theme */
+  --secondary-rgb: 47, 47, 47; /* Secondary color for light theme */
+  --text-primary: 0, 0, 0;
+  --text-secondary: 10, 10, 10;
+  --text-tertiary: 75, 75, 75;
+  --container-primary: 243, 244, 246;
+  --button: 219, 234, 254;
+  --color-hover: 191, 219, 254;
+  --scrollbar-track-color: #f1f1f1;
+  --scrollbar-thumb-color: #888;
+  --scrollbar-thumb-hover-color: #555;
+}
+
+[data-theme="dark"] {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 18, 18, 18; 
+  --primary-rgb: 0, 0, 0; /* Primary color for dark theme */
+  --secondary-rgb: 39, 39, 39; /* Secondary color for dark theme */
+  --text-primary: 250, 250, 250;
+  --text-secondary: 240, 240, 240;
+  --text-tertiary: 195, 195, 195;
+  --container-primary: 18, 18, 18;
+  --button: 36,36,36;
+  --color-hover: 0, 0, 0;
+  --scrollbar-track-color: #2c2c2c;
+  --scrollbar-thumb-color: #888;
+  --scrollbar-thumb-hover-color: #555;
+}
+
+body {
+  background-color: rgb(var(--primary-rgb));
+  color: rgb(var(--foreground-rgb));
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container-bg{
+  background-color: rgb(var(--container-primary));
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary-rgb));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--secondary-rgb));
+}
+
+.text-primary {
+  color: rgb(var(---text-primary))
+}
+
+.text-secondary {
+  color: rgb(var(--text-secondary));
+}
+
+.text-tertiary {
+  color: rgb(var(--text-tertiary));
+}
+
+.button{
+  background-color: rgb(var(--button));
+  
+}
+.button:hover{
+  background-color: rgb(var(--color-hover));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
+
+/* Estilizando a barra de rolagem para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+}
