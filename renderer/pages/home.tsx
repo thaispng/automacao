@@ -98,6 +98,9 @@ const Home: React.FC = () => {
             alt="Profiling"
             priority
           />
+        <h3 className="text-xs text-secondary dark:text-secondary font-normal my-1">
+          by Thais Ventura Developer
+        </h3>
         </div>
       </main>
     </>

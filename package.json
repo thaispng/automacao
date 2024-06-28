@@ -52,7 +52,8 @@
       "category": "your.app.category.type"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "renderer/public/icon.ico"
     },
     "linux": {
       "target": [
