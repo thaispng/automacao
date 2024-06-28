@@ -99,7 +99,7 @@ const Home: React.FC = () => {
             priority
           />
         <h3 className="text-xs text-secondary dark:text-secondary font-normal my-1">
-          by Thais Ventura Developer
+          By Thais Ventura Developer
         </h3>
         </div>
       </main>
